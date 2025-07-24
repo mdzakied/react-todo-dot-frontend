@@ -21,7 +21,7 @@ export default function LoginPage() {
     try {
       const result = await loginUser(data);
       toast.success(result.message);
-      setTimeout(() => navigate("/"), 1000);
+      setTimeout(() => navigate("/todo"), 1000);
     } catch (error) {
       if (error instanceof Error) {
         toast.error(error.message);
