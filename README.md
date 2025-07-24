@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">next-todo-frontend</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center" id="description">Web app for managing data of todo with auth (Technical Test DOT)</p>
 
-Currently, two official plugins are available:
+<h2>🖥️ Demo</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here're project's demo :
 
-## Expanding the ESLint configuration
+[todo-apps-demo](https://react-todo-dot-frontend.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🚀 Feature :
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Feature Auth (Login and Register)
+- Feature TODO (CRUD)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+> [!NOTE]
+> Information for test:
+> * Register account
+> * Log in account
+> * CRUD Todo
+
+---
+
+## ⚙️ Technologies Used
+
+- **Frontend 💻**: Typescript, React.js.
+- **Styling 🎨:** Tailwind for CSS Utility.
+- **Storage 🗃️:** Interacts with a local storage for simulation auth & todo users.
+
+---
+
+<h2>🛠️ Installation Steps :</h2>
+
+<p>1. Clone Repository</p>
+
+```
+git clone https://github.com/mdzakied/react-todo-dot-frontend.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<br />
+<p>2. Run Project for Development</p>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* npm install
+  
+  ```
+  npm install
+  ```
+  
+* Run Project
+  
+  ```
+  npm run dev
+  ```
+  
+---
